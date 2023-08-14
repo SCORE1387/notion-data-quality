@@ -22,7 +22,7 @@ def no_updates_for_2_weeks(notion_card) -> bool:
 
 def name_is_empty(notion_card) -> bool:
     if (len(notion_card["properties"]["Name"]["title"]) == 0
-            and not notion_card["properties"]["Name"]["title"][0]["text"]["content"]):
+            or not notion_card["properties"]["Name"]["title"][0]["text"]["content"]):
         return True
     return False
 
