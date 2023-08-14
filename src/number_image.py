@@ -3,7 +3,7 @@ import os
 import boto3
 from PIL import Image, ImageFont, ImageDraw
 
-from src import config
+import config
 
 session = boto3.session.Session()
 s3 = session.client(

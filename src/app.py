@@ -1,10 +1,10 @@
 from notion_client import Client
 
-from src import config
-from src.data_quality_rule import IssueTypeSeverity
-from src.notion_card_data_quality_issue import NotionCardDataQualityIssue
-from src.notion_card_data_quality_rules_config import RULES
-from src.number_image import get_number_image
+import config
+from data_quality_rule import IssueTypeSeverity
+from notion_card_data_quality_issue import NotionCardDataQualityIssue
+from notion_card_data_quality_rules_config import RULES
+from number_image import get_number_image
 
 notion = Client(auth=config.NOTION_AUTH_TOKEN)
 

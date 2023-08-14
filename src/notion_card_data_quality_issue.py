@@ -1,4 +1,4 @@
-from src.data_quality_rule import DataQualityRule
+from data_quality_rule import DataQualityRule
 
 
 class NotionCardDataQualityIssue:

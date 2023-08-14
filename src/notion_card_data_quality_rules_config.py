@@ -1,5 +1,5 @@
-from src.data_quality_rule import DataQualityRule, IssueTypeSeverity
-from src.helpers import is_more_than_two_weeks_away
+from data_quality_rule import DataQualityRule, IssueTypeSeverity
+from helpers import is_more_than_two_weeks_away
 
 
 def tags_must_not_be_empty(notion_card) -> bool:
