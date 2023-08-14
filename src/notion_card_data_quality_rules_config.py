@@ -9,7 +9,8 @@ def tags_must_not_be_empty(notion_card) -> bool:
 
 
 def number_must_be_more_than_10(notion_card) -> bool:
-    if notion_card["properties"]["Number"]["number"] <= 10:
+    number = notion_card["properties"]["Number"]["number"]
+    if not number or number <= 10:
         return True
     return False
 
